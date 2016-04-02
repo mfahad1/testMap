@@ -1,0 +1,30 @@
+
+<style>
+  .scroll {
+    height: 100%;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-custom{
+    margin-left: 83%;
+    margin-top: -17%;
+    background-color: black;
+    color: white;
+  }
+</style>
+<ion-view>
+  <ion-content>
+    <div style="height: 7%;">
+      <h4>Latitude: {{pos.lat}}</h4>
+      <h4>Longitude : {{pos.long}}</h4>
+      <button class="button icon ion-close-circled btn-custom" ng-click="exit()"></button>
+    </div>
+    <button class="button button-full button-positive" ng-click="getPosition()">
+      Try!
+    </button>
+    <div id="map" data-tap-disabled="true"></div>
+  </ion-content>
+</ion-view>

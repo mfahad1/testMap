@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Academia Solution</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-service-core/ionic-core.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- bower components -->
+    <script src="lib/lodash/dist/lodash.min.js"></script>
+    <script src="lib/restangular/dist/restangular.min.js"></script>
+    <script src="lib/ngstorage/ngStorage.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="src/app.module.js"></script>
+    <script src="src/core/core.module.js"></script>
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/customLoader.js"></script>
+
+    <script src="src/landing/landing.module.js"></script>
+    <script src="src/core/restangular.config.js"></script>
+    <script src="src/core/router.config.js"></script>
+    <script src="src/common/rest.factory.js"></script>
+    <script src="src/landing/landing.controller.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCvYeB_v1FuMZg3YfsXgIj1n35qoMRKnqI&sensor=true"></script>
+  </head>
+  <body ng-app="app">
+
+    <ion-nav-view></ion-nav-view>
+
+  </body>
+</html>
